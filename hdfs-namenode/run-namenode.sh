@@ -34,9 +34,6 @@ addConfig $CORE_SITE "ipc.client.connect.max.retries" 400
 addConfig $CORE_SITE "ha.zookeeper.quorum" $HA_ZOOKEEPER_QUORUM
 addConfig $CORE_SITE "ha.zookeeper.parent-znode" /$CLUSTER_NAME
 
-addConfig $CORE_SITE "hadoop.proxyuser.hdfs.hosts" "*"
-addConfig $CORE_SITE "hadoop.proxyuser.hdfs.groups" "*"
-
 # Update hdfs-site.xml
 addConfig $HDFS_SITE "dfs.permissions.superusergroup" "hadoop"
 addConfig $HDFS_SITE "dfs.nameservices" $DFS_NAMESERVICE_ID
